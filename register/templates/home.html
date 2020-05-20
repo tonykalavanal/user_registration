@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>User Registeration</title>
+  </head>
+  <body>
+    <div align="center">
+        <h2>New User Registeration</h2>
+        <form action="" method="post">
+          {% csrf_token %}
+          First Name <input type="text" name="fname"><br/>
+          Last Name <input type="text" name="lname"><br/>
+          Email <input type="email" name="email"><br/>
+          Password <input type="password" name="password"><br/>
+          Phone <input type="tel" name="phone"><br/>
+          College <input type="text" name="college"><br>
+          <input type="submit" name="submit" value="Register">
+          <input type="reset" name="reset" value="Cancel">
+        </form>
+    </div>
+  </body>
+</html>
